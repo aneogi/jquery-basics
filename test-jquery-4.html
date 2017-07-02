@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+</head>
+<body>
+  <div id="last"></div>
+
+  <script type="text/javascript" src="resource/lib/jquery-3.2.1.min.js"></script>
+  <script>
+    $(document).ready(
+        function(){
+          var contact = {'email': 'abc123.xyz@email.com', 'telephone': '0332453054',
+                         'url': 'www.godai.com', 'range': '24' };
+           console.log('contact: ' + JSON.stringify(contact));
+           localStorage.setItem('contact', JSON.stringify(contact));
+
+           contact = JSON.parse(localStorage.getItem('contact'));
+           console.log('contactUpdated: ' + contact);
+
+           var idx = 0;
+           $.each(contact,function(key,value){
+             console.log(idx + ': ' + key + ': ' + value);
+             idx+=1;
+           });
+
+        }
+    );
+  </script>
+</body>
+</html>

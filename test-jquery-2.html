@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+</head>
+<body>
+    <a href="http://jquery.com/">jQuery</a>
+    <script type="text/javascript" src="resource/lib/jquery-3.2.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("a").click(function(event){
+          alert('The link no longer works !');
+          event.preventDefault();
+          $(this).hide("slow");
+        });
+      });
+    </script>
+</body>
+</html>

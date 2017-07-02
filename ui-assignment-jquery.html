@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+  </head>
+  <body>
+    <link rel="stylesheet" type="text/css" href="resource/css/style.css">
+    <script type="text/javascript" src="resource/js/script.js"></script>
+    <script type="text/javascript" src="resource/lib/jquery-3.2.1.min.js"></script>
+    <form id="fifth_panel">
+      <div class="table">
+        <div class="cell"><label>Email</label><input id="email" name="email" type="email" pattern=".+@beststartupever.com"></div>
+        <div class="cell"><label>Telephone</label><input id="telephone" name="telephone" type='tel' pattern="^\d{4}-\d{3}-\d{4}$" ></div>
+        <div class="cell"><label>URL</label><input id="url" name="url" type="url"></div>
+        <div class="cell"><label>Range</label><input id="range" name="range" type="range" min="1" max="100" value="0"></div>
+      </div>
+    </form>
+    <form id="sixth_panel">
+      <div class="container">
+        <input type="button" onclick="saveToLocalStorage()" value="Save to local storage" >
+      </div>
+    </form>
+    <form id="seventh_panel">
+      <div class="container">
+        <input type="button" onclick="fetchFromLocalStorage()" value="Fetch from local storage" >
+      </div>
+    </form>
+    <form id="eight_panel">
+      <div id="fetched_data" class="container"></div>
+    </form>
+  </body>
+</html>
+<!--
+Anwarshah Connector
+After Spencer
+Udayan Sangha,
+Before Bridge
+30-July-2017
+-->

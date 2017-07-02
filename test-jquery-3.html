@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+</head>
+<body>
+  <ul>
+    <div class="test"></div>
+    <li id="foo1">foo</li>
+    <li id="bar1" class="test">bar</li>
+    <li id="baz1">baz</li>
+    <div class="test"></div>
+  </ul>
+  <div id="last"></div>
+
+
+  <script type="text/javascript" src="resource/lib/jquery-3.2.1.min.js"></script>
+  <script>
+    $(document).ready(
+        function(){
+          var foo = $("li");
+          var baz = $("#baz1");
+          console.log("Index: " + foo.index( baz ));
+        }
+    );
+  </script>
+</body>
+</html>
