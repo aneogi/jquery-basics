@@ -1,0 +1,41 @@
+.table {
+  display: table;
+}
+.row {
+  display: table-row;
+  margin: auto;
+}
+.cell {
+  display: table-cell;
+  color: green;
+  background-color: wheat;
+  vertical-align: top;
+  width: 400px;
+  border: 1px solid green;
+  padding: 10px;
+}
+.container {
+  text-align:center;
+  color: green;
+  vertical-align: top;
+  padding: 10px;
+}
+table{
+  width: 100%;
+  border: 1px solid #cef;
+  text-align: left;
+}
+th{
+  font-weight: bold;
+  background-color: #acf;
+  border-bottom: 1px solid #cef;
+}
+td, th{
+  padding: 4px 5px;
+}
+.odd{
+  background-color: #def;
+}
+.odd td{
+  border-bottom: 1px solid #cef;
+}
