@@ -10,23 +10,22 @@ function saveToLocalStorage(){
 
 function fetchFromLocalStorage(){
   var contact = JSON.parse(localStorage.getItem('contact'));
-  //var fetched_data = document.getElementById('fetched_data');
+  var fetched_data = document.getElementById('fetched_data');
 
-  console.log('contact' + '=> ' + contact );
+  var indx = 0;
+  var rowTable = '<table cellpadding="0" cellspacing="0">';
+  rowTable += '<tr><th>'+'Field'+'</th><th>'+'Value'+'</th></tr>';
 
   $.each(contact,function(key,value){
-    console.log(key + ': ' + value);
-
+    if (indx%2 == 0) {
+      rowTable += '<tr><td>'+key+'</td><td>'+value+'</td></tr>';
+    }else{
+      rowTable += '<tr class="odd"><td>'+key+'</td><td>'+value+'</td></tr>';
+    }
+    indx +=1;
   });
 
-/*  $(contact).each(
-    function(index){
-      console.log(index + ': ' + $(this).text());
-    }
-  );*/
+  rowTable += '</table>';
+  fetched_data.innerHTML = rowTable;
 
-  //  $('#fetched_data').append('<table><tr>')
-  //  $.each(contact, function(key,value){
-
-  //});
 }
