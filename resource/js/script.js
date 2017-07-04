@@ -27,5 +27,4 @@ function fetchFromLocalStorage(){
 
   rowTable += '</table>';
   fetched_data.innerHTML = rowTable;
-
 }

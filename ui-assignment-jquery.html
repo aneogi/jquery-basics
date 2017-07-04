@@ -10,10 +10,10 @@
     <script type="text/javascript" src="resource/lib/jquery-3.2.1.min.js"></script>
     <form id="fifth_panel">
       <div class="table">
-        <div class="cell"><label padding="20px">Email</label><input id="email" name="email" type="email" pattern=".+@beststartupever.com"></div>
-        <div class="cell"><label padding="20px">Telephone</label><input id="telephone" name="telephone" type='tel' pattern="^\d{4}-\d{3}-\d{4}$" ></div>
-        <div class="cell"><label padding="20px">URL</label><input id="url" name="url" type="url"></div>
-        <div class="cell"><label padding="20px">Range</label><input id="range" name="range" type="range" min="1" max="100" value="0"></div>
+        <div class="cell"><label>Email : </label><input id="email" name="email" type="email" required placeholder="Valid email"></div>
+        <div class="cell"><label>Telephone : </label><input id="telephone" name="telephone" type='tel' required pattern="\d{10}"></div>
+        <div class="cell"><label>URL : </label><input id="url" name="url" type="url" required pattern="https?://.+"></div>
+        <div class="cell"><label>Range : </label><input id="range" name="range" type="range" min="1" max="10" value="0"></div>
       </div>
     </form>
     <form id="sixth_panel">

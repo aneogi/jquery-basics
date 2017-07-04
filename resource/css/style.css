@@ -37,6 +37,3 @@ td, th{
 .odd{
   background-color: #def;
 }
-.odd td{
-  border-bottom: 1px solid #cef;
-}
